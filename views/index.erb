@@ -1,0 +1,21 @@
+<div class = "container">
+  <form action="/" method="post">
+    <div class="form-group">
+      <h1>Parcel Pricer</h1>
+      <p>
+        The Parcel Pricer!
+      </p>
+      <label for ="length"><h3>Enter a length</h3></label>
+      <input id="length" name="length" class="form-control" type="text" placeholder="type a length" required><br>
+      <label for ="width"><h3>Enter a width</h3></label>
+      <input id="width" name="width" class="form-control" type="text" placeholder="type a width" required><br>
+      <label for ="height"><h3>Enter a height</h3></label>
+      <input id="height" name="height" class="form-control" type="text" placeholder="type a height" required><br>
+      <button type="submit" class="btn btn-info">Submit!</button>
+      <a href="/" class="btn btn-warning" role="button">Check another package.</a>
+    </div>
+    <% if @price %>
+    <h3>This package costs $<%= @price %> to ship</h3>
+  </form>
+  <% end %>
+</div>
